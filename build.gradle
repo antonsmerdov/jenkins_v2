@@ -3,6 +3,8 @@ plugins {
     id "io.qameta.allure" version "2.9.6"
 }
 
+
+
 repositories {
     mavenCentral()
 }
@@ -40,6 +42,7 @@ dependencies {
 
 
 tasks.withType(Test) {
+    systemProperties(System.getProperties());
     useJUnitPlatform()
 
     testLogging {
@@ -49,3 +52,12 @@ tasks.withType(Test) {
         }
     }
 }
+
+
+
+//taks properties_test(type: Test) {
+//    useJUnitPlatform { JUnitPlatformOptions it ->
+//        includeTags "properties"
+//    }
+//}
+
