@@ -1,12 +1,12 @@
 {
   "base": {
-    "project": "some project",
+    "project": "Local test run",
     "environment": "some env",
     "comment": "some comment",
     "reportLink": "",
     "language": "en",
     "messenger": "telegram",
-    "allureFolder": "build/allure-report/",
+    "allureFolder": "build/allureReport/",
     "enableChart": true
   },
   "telegram": {
