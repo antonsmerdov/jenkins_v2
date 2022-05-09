@@ -1,0 +1,16 @@
+bot_token 5322701699:AAFZFk2kCJwA1aPBWDvJ7wuZUez0kZTrt4Q
+chat_id  -1001766857010
+
+https://api.telegram.org/bot5322701699:AAFZFk2kCJwA1aPBWDvJ7wuZUez0kZTrt4Q/getUpdates
+
+ // command in many lines (\ as separator)
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"chat_id": "-1001766857010", "text": "hello bot", "disable_notification": true}' \
+     https://api.telegram.org/bot5322701699:AAFZFk2kCJwA1aPBWDvJ7wuZUez0kZTrt4Q/sendMessage
+
+
+//command is one line
+
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001766857010", "text": "This is a test from ua_guru", "disable_notification": true}' https://api.telegram.org/bot5322701699:AAFZFk2kCJwA1aPBWDvJ7wuZUez0kZTrt4Q/sendMessage
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "891787861", "text": "This is a test from ua_guru", "disable_notification": true}' https://api.telegram.org/bot5322701699:AAFZFk2kCJwA1aPBWDvJ7wuZUez0kZTrt4Q/sendMessage
